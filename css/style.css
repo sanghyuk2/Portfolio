@@ -79,7 +79,7 @@ p{
     height: auto;
 
 }
-#header .header{
+/*#header .header{
     min-height: 8vh;
     background-color: rgba(31,30,30,0.24);
     transition: .3s ease background-color;
@@ -197,7 +197,7 @@ p{
 }
 #header .hamburger.active .bar::before{
     bottom: 0;
-}
+}*/
 /* end header section */
 /* hero section */
 #hero{
@@ -279,8 +279,10 @@ animation-delay: 1.5s;
 
 }
 #services .service-top{
-    width: 500px;
+    width: 450px;
     margin: 0;
+    
+    
 }
 
 #services .service-bottom{
@@ -291,7 +293,7 @@ animation-delay: 1.5s;
     margin-top: 50px;
 }
 #services .service-item{
-    flex-basis: 80%;
+    flex-basis: 65%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -381,7 +383,7 @@ animation-delay: 1.5s;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 65%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -605,7 +607,7 @@ padding: 100px 20px;
     /* hero */
     /* service section */
     #services .service-bottom .service-item{
-        flex-basis: 45%;
+        flex-basis: 35%;
         margin: 2.5%;
     }
     /* service section */
@@ -619,7 +621,7 @@ padding: 100px 20px;
     #projects .project-item{
         height: 400px;
         margin: 0;
-        width: 100%;
+        width: 90%;
         border-radius: 10px;
     }
     #projects .all-projects .project-info{
