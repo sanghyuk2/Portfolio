@@ -27,7 +27,7 @@
     width: 60px;
     height: 100vh;
     padding: 1rem;
-    border-right: 2px solid #777777;
+    border-right: .5px solid #777777;
     
     display: flex;
     align-items: center;
@@ -90,12 +90,11 @@
   /* Show Menu */
   .menu-wrap .toggler:checked ~ .menu {
     visibility: visible;
+    transform: translateX(100%);
+    transition: all 1s ease;
   }
   
-  .menu-wrap .toggler:checked ~ .menu > div {
-    transform: scale(1);
-    transition-duration: 1s;
-  }
+ 
   
   .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
@@ -105,7 +104,7 @@
   .menu-wrap .menu {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -113,20 +112,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateX(-100%);
+    transition: all 1.5s ease;
     
   }
   
   .menu-wrap .menu > div {
     background: black;
-    border-radius: 50%;
+    
     width: 200vw;
     height: 200vw;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
-    transform: scale(0);
-    transition: all 0.4s ease;
+    
     
   }
   
@@ -167,4 +167,15 @@
     width: 100%;
     transition: width .3s;
   }
-  
+  /* scroll bar effect */
+  ::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background:gray;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:black;
+}
+/* end scroll bar effect */
