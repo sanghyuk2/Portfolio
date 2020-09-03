@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+section{
+	border-bottom: .1px black solid;
+}
+
 /* start main page section  */
 .videoSection {
     border: 1px #000000 solid;
@@ -11,7 +15,8 @@
 	top: 0;
 	left: 0;
     width: 100%;
-    height: 100vh;
+	height: 100vh;
+	margin-bottom: 25%;
 }
 
 
@@ -26,12 +31,58 @@
 .container{
 	display: flex;
 	align-items: center;
-
 	margin: 0 auto;
 	justify-content: flex-start;
-	
 	width: 100%;
 	
+}
+
+.firstPage .container2 {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 10%;
+}
+
+.firstPage .container2 .content h1 {
+	padding-bottom: 5%;
+}
+
+.container2 {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 10%;
+}
+
+.link .container2 .content h1 {
+	margin-top: 25%;
+	padding-bottom: 5%;
+}
+
+.lastPage .container2 .content h1 {
+	margin-top: 25%;
+	padding-bottom: 5%;
+
+}
+
+
+.firstPage .container2 .content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+
+}
+/*
+.firstPage .container2 .content h1 {
+	font-size: 2rem;
+}
+
+*/
+.container2 .content p {
+	font-size: 1.2rem;
 }
 
 .word {
@@ -46,7 +97,8 @@
 
 .word h1 {
 	line-height: 1.7em;
-	letter-spacing: 0.8rem;
+	letter-spacing: 0.5rem;
+	font-size: 2.5rem;
 }
 
 .word h6 {
@@ -56,7 +108,6 @@
 /* end main page section */
 /* 글자 위치 조정 필요함 */
 .link {
-    border: .5px #000000 solid;
     position: relative;
     width: 100%;
 	height: 50vh;
@@ -73,51 +124,25 @@
 }
 
 
-section{
-    width:100%;
-    height:100vh;
-  }
-
 .link div:hover img {
-    transform: scale(2);
+    transform: scale(1);
 }
+
 .firstPage{
 	width: 100%;
-    height: 70vh;
+    height: 40vh;
     position: relative;
     
 	
 }
+
 .lastPage{
 	width: 100%;
 	height: 110vh;
 	position: relative;
 }
-.container2{
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-}
 
-.content {
-	display: block;
-	width: 100%;
-	position:absolute;
-	z-index:1;
-	padding: 0 0 0 13%;
-	font-size: 30px;
-	
-}
 
-.content h1 {
-	line-height: 1.7em;
-	letter-spacing: 0.8rem;
-}
-
-.content h6 {
-	font-size: 20px;
-	letter-spacing: 0.5rem;
-}
 /* 글자 위치 조정 필요함 */
 /* scroll effect section */
 .link .content h1,
@@ -129,11 +154,11 @@ section{
     display: inline-block;
     font-size: 2em;
     transition: 0.5s;
-    transform-origin: left;
-    transform: scaleX(0);
+    transform-origin: bottom;
+    transform: scaleY(0);
 }
 section .content h1[data-scroll="in"]{
-    transform: scaleX(1);
+    transform: scaleY(1);
 
 }
 
@@ -164,3 +189,69 @@ section .content p[data-scroll="in"]{
     transition-delay: 0.1s;
 }
 /* end scroll effect section */
+
+@media only screen and (min-width:770px){
+
+	.word {
+		padding: 0 0 0 15%;
+	}
+
+	.word h1 {
+		line-height: 1.7em;
+		letter-spacing: 0.8rem;
+		font-size: 3rem;
+	}
+
+	.videoSection {
+		margin-bottom: 15%;
+	}
+	
+	.firstPage .container2 {
+		padding-left: 5%;
+	}
+
+	.container2 {
+		padding-left: 5%;
+	}
+
+	.firstPage .container2 .content h1 {
+		font-size: 3.5rem;
+		padding-bottom: 0%;
+	}
+
+	.container2 .content p {
+		font-size: 1.2rem;
+	}
+
+	.link .container2 .content h1 {
+		margin-top: 5%;
+		padding-bottom: 5%;
+	}
+	
+	.lastPage .container2 .content h1 {
+		margin-top: 5%;
+		padding-bottom: 5%;
+	
+	}
+
+
+
+}
+
+@media only screen and (min-width:1200px){
+
+	.firstPage .container2 .content {
+		flex-direction: row;
+	}
+
+
+	.firstPage .container2 .content h1 {
+		transform: translateY(-50%);
+		font-size: 3rem;
+		margin-right: 5%;
+	}
+
+	.container2 .content p {
+		font-size: 1.2rem;
+	}
+}
