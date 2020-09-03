@@ -11,7 +11,6 @@
 #header .header {
 	min-height: 8vh;
 	background-color:white;     
-	border-bottom: 0.1px #f0efeb solid;
     transition: .3s ease background-color;
 }
 
