@@ -11,8 +11,8 @@
 #header .header {
 	min-height: 8vh;
 	background-color:white;     
+	border-bottom: 0.1px #b5b4b1 solid;
     transition: .3s ease background-color;
-    border-bottom: .3px black solid;
 }
 
 #header .nav-bar {
