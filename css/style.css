@@ -5,13 +5,12 @@
 }
 
 section{
-	border-bottom: .1px black solid;
+	border-bottom: .1px #f0efeb solid;
 }
 
 /* start main page section  */
 .videoSection {
-    border: 1px #000000 solid;
-	position: relative;
+    position: relative;
 	top: 0;
 	left: 0;
     width: 100%;
