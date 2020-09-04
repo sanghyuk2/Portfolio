@@ -9,13 +9,9 @@ hamburger.addEventListener('click', () => {
 });
 
 document.addEventListener('scroll', () => {
-	var scroll_position = window.scrollY;
-	if (scroll_position > 600) {
-		header.style.backgroundColor = 'white';
-	} else {
+
 		header.style.backgroundColor = 'transparent';
 		
-	}
 });
 
 menu_item.forEach((item) => {
