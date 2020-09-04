@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
 .loader {
     --path: #2f3545;
     --dot: #5628ee;
@@ -154,6 +160,7 @@ html {
 
 // Center & dribbble
 .preloader {
+    position: fixed;
     min-height: 100vh;
     background: #f5f9ff;
     display: flex;
@@ -169,10 +176,9 @@ html {
 
 .text {
     text-align: center;
-    z-index: 10;
+    z-index: -5;
 }
-@keyframes loader {
-    100% {
-        opacity: 0;
-    }
-}
+
+
+
+

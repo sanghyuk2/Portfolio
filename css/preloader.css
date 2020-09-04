@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .loader {
   --path: #2f3545;
   --dot: #5628ee;
@@ -244,6 +249,7 @@ html {
 }
 
 .preloader {
+  position: fixed;
   min-height: 100vh;
   background: #f5f9ff;
   display: -webkit-box;
@@ -264,18 +270,6 @@ html {
 
 .text {
   text-align: center;
-  z-index: 10;
-}
-
-@-webkit-keyframes loader {
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes loader {
-  100% {
-    opacity: 0;
-  }
+  z-index: -5;
 }
 /*# sourceMappingURL=preloader.css.map */
