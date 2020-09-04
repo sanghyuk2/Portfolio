@@ -128,7 +128,7 @@ section{
 	height: 100%;
 	display: block;
 	transform-origin: bottom left;
-    transition: .3s ease;
+    transition: .2s ease;
 	transform: rotate(-10deg);
 	opacity: 0;
 }
