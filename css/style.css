@@ -161,6 +161,32 @@ section{
 	position: relative;
 }
 
+.lastPage .content{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.lastPage .content .left{
+	display: block;
+	align-items: center;
+justify-content: center;
+	width: 50%;
+	height: 300px;
+}
+
+.lastPage .content .right{
+	display: block;
+	width: 50%;
+	height: 300px;
+}
+
+.lastPage .container2{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 
 /* 글자 위치 조정 필요함 */
 /* scroll effect section */
@@ -272,5 +298,10 @@ section .content p[data-scroll="in"]{
 
 	.container2 .content p {
 		font-size: 1.2rem;
+	}
+
+	.lastPage .content{
+		display: flex;
+		flex-direction: row;
 	}
 }
