@@ -7,10 +7,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/preloader.css">
 
 </head>
 
 <body>
+
+    <div class="preloader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+
+
     <!-- Header -->
     <header id="header">
         <div class="header container">
@@ -94,17 +117,19 @@
                     </div>
                 </div>
             </section>
-            
+
             <!-- end main page section -->
 
             <section class="firstPage">
-                    <div class="container2">
-                        <div class="content">
-                            <h1>우리는 이렇게 모였습니다</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corrupti. Consequuntur minus explicabo vel inventore commodi architecto quod dolorem minima, laborum enim repudiandae itaque magni id laboriosam exercitationem dolorum quas!</p>
-                        </div>
+                <div class="container2">
+                    <div class="content">
+                        <h1>우리는 이렇게 모였습니다</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, corrupti. Consequuntur minus
+                            explicabo vel inventore commodi architecto quod dolorem minima, laborum enim repudiandae
+                            itaque magni id laboriosam exercitationem dolorum quas!</p>
                     </div>
-                
+                </div>
+
             </section>
 
             <section class="link">
@@ -125,7 +150,9 @@
                     <div class="container2">
                         <div class="content">
                             <h1>아무내용</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita velit, soluta molestiae dolorem animi, excepturi praesentium incidunt quos minima sit explicabo quasi in ipsum modi optio vitae. Corrupti, tempore minus!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita velit, soluta molestiae
+                                dolorem animi, excepturi praesentium incidunt quos minima sit explicabo quasi in ipsum
+                                modi optio vitae. Corrupti, tempore minus!</p>
                         </div>
                     </div>
                 </div>
@@ -137,29 +164,36 @@
                     <div class="container2">
                         <div class="content">
                             <h1>아무내용</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita velit, soluta molestiae dolorem animi, excepturi praesentium incidunt quos minima sit explicabo quasi in ipsum modi optio vitae. Corrupti, tempore minus!</p>
-                        </div>                    
-                </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita velit, soluta molestiae
+                                dolorem animi, excepturi praesentium incidunt quos minima sit explicabo quasi in ipsum
+                                modi optio vitae. Corrupti, tempore minus!</p>
+                        </div>
+                    </div>
             </section>
             <section class="lastPage">
                 <div class="container2">
                     <div class="content">
                         <h1>Ready to work with us?</h1>
-                        <p>Contact us</p>                        
+                        <p>Contact us</p>
                     </div>
                 </div>
-            
-        </section>
+
+            </section>
 
 
         </main>
     </div>
     <script src="js/main.js"></script>
     <script src="js/scroll.js"></script>
-        <script type="text/javascript">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script type="text/javascript">
         ScrollOut({
-            targets:'h1,h6,p'
+            targets: 'h1,h6,p'
         })
+
+        setTimeout(function () {
+            $('.preloader').fadeToggle();
+        }, 2000);
     </script>
 </body>
 
