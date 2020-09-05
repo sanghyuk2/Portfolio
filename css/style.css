@@ -16,6 +16,8 @@ section{
     width: 100%;
 	height: 100vh;
 	margin-bottom: 25%;
+	font-family: 'Oswald', sans-serif;
+	
 }
 
 .videoSection #myVideo {
@@ -80,14 +82,13 @@ section{
 }
 
 .word h1 {
-	line-height: 1.7em;
-	letter-spacing: 0.5rem;
+	line-height: 1.2em;
 	font-size: 2.5rem;
 }
 
 .word h6 {
 	font-size: 20px;
-	letter-spacing: 0.5rem;
+	
 }
 /* end main page section */
 /* start link section */
@@ -406,8 +407,8 @@ section .content p[data-scroll="in"]{
 	}
 
 	.word h1 {
-		line-height: 1.7em;
-		letter-spacing: 0.8rem;
+		line-height: 1.5em;
+		letter-spacing: 0.3rem;
 		font-size: 3rem;
 	}
 
