@@ -1,4 +1,10 @@
 /* Header section */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -87,6 +93,22 @@
 	letter-spacing: initial;
 }
 
+#header .nav-list ul .cursor {
+	pointer-events: none;
+    position: fixed;
+    padding: 0rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+}
+
+#header .nav-list ul li:hover ~ .cursor {
+	padding: 0.3rem;
+	
+	transform: translate(-50%, -50%) scale(8);
+	
+}
 
 
 #header .hamburger {
@@ -202,3 +224,22 @@
 	}
   }
 
+
+@media(min-width: 900px) {
+	nav {
+		  display: flex;
+		  justify-content: space-around;
+	}
+}
+
+@media(max-width: 900px) {
+	nav {
+		  top: 30%;
+	}
+
+	.hover-this {
+		  width: 100%;
+		  padding: 20px 0;
+		  display: inline-block;
+	}
+}
