@@ -1,8 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 }
 
 section{
@@ -213,8 +212,10 @@ form .submit{
     margin-top: 20px;
 }
 form .submit:hover{
-    background-color: #f44336;
-    cursor: pointer;
+	background-color: #f44336;
+	
+	cursor: pointer;
+	
 }
 /* end contact section */
 
