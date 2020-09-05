@@ -13,8 +13,6 @@
             yMove = y / height * (move * 2) - move;
 
         span.style.transform = `translate(${xMove}px, ${yMove}px)`;
-
-        if (e.type === 'mouseleave') span.style.transform = '';
     };
 
     const editCursor = e => {
