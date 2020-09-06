@@ -425,7 +425,7 @@ section .content p[data-scroll="in"]{
 
 	.word h1 {
 		line-height: 1.5em;
-		letter-spacing: 0.3rem;
+		letter-spacing: 0.1rem;
 		font-size: 3rem;
 	}
 
