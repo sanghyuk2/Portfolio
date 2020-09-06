@@ -496,7 +496,7 @@ section .content p[data-scroll="in"]{
 	.lastPage .container3{
 		position: relative;
 		min-width: 1100px;
-		min-height: 550px;
+		min-height: 550px; 
 		display: flex;
 		z-index: 1;
 		flex-direction: column;
