@@ -408,15 +408,22 @@ section .content p[data-scroll="in"]{
 
 	.link .content{
 		flex-direction: row;
+		padding-top: 70px;
 	}
 
 	.link .content .left{
-		margin-top: 80px;
-		padding-right:170px;
+		width: 40vw;
+		margin-left: 20px;
+		
 	}
 
 	.link .content .right{
-		margin-top: 80px;
+		
+		width: 150%;
+		height: 100%;
+		padding-left: 170px;
+		font-size: 2rem;
+
 	}
 
 	.word {
@@ -439,10 +446,7 @@ section .content p[data-scroll="in"]{
 		font-size: 1.2rem;
 	}
 
-	.link .container2 .content h1 {
-		margin-top: 5%;
-		padding-bottom: 5%;
-	}
+
 
 }
 
