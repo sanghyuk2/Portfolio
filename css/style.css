@@ -97,6 +97,7 @@ section{
     width: 100%;
 	height: 75vh;
 	overflow: hidden;
+	cursor: pointer;
 } 
 
 #curtain{
@@ -142,6 +143,7 @@ section{
 	color: white;
 	
 }
+
 
 
 /* end link section */
@@ -227,7 +229,7 @@ section{
     padding: 70px 50px;
     background: #fff;
    
-	box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+	
 	
 }
 .lastPage .container3 .contactForm h2{
@@ -309,6 +311,17 @@ section{
 .lastPage .container3 .contactForm .formBox .inputBox input[type="submit"]:hover{
     color: #ff568c;
 }
+.welcomeFooter .lastFooter{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	
+}
+.welcomeFooter .lastFooter .footerright{
+	position: absolute;
+	right: 0;
+	border: 1px green solid;
+}
 /* end contact section */
 
 /* 글자 위치 조정 필요함 */
@@ -319,7 +332,7 @@ section{
     margin: 0;
     padding: 0;
     display: inline-block;
-    font-size: 2em;
+    font-size: 3em;
     transition: 0.5s;
     transform-origin: bottom;
     transform: scaleY(0);
@@ -330,10 +343,11 @@ section .content h1[data-scroll="in"]{
 }
 
 section .content p{
-    font-size: 1em;
+    font-size: 2em;
     transition: 1s;
     transform-origin: bottom;
-    transform: scaleY(0);
+	transform: scaleY(0);
+	
 }
 section .content p[data-scroll="in"]{
     transform: scaleY(1);
@@ -368,8 +382,9 @@ section .content p[data-scroll="in"]{
 	.link img {
 		
 		transform-origin: bottom left;
-		transition: .2s ease;
+		transition: transform .2s ease;
 		transform: rotate(-20deg);
+		
 		opacity: 0;
 	}
 	.link .tiny{
@@ -379,6 +394,7 @@ section .content p[data-scroll="in"]{
 	
 	.link div:hover img {
 		transform: rotate(0deg) ;
+		
 		opacity: 1;
 		
 	}
@@ -473,6 +489,9 @@ section .content p[data-scroll="in"]{
 		margin: 100px;
 		
 	}
+	.contactinfo div{ 
+		padding-top: 30px;
+	}
 
 	.contact-form{
 		padding:0 100px;
@@ -482,12 +501,12 @@ section .content p[data-scroll="in"]{
 	}
 	/* start last section */
 	.lastPage{
-		padding-left: 40px;
+		
 		position: relative;
 		justify-items: center;
 		align-items: center;
 		min-height: 100vh;
-		background: url(../image/homeimage4.jpg);
+		
 		display: flex;
 	
 	}
@@ -496,23 +515,24 @@ section .content p[data-scroll="in"]{
 	.lastPage .container3{
 		position: relative;
 		min-width: 1100px;
-		min-height: 550px;
+		min-height: 550px; 
 		display: flex;
 		z-index: 1;
-		flex-direction: column;
+		flex-direction: row;
 	}
 	.lastPage .container3 .contactinfo{
-		position: absolute;
-		top: 40px;
-		width: 350px;
-		height: calc(100%-80px);
+		
+		
+		width: 600px;
+		height: 80vh;
+		
 		background: white;
 		z-index: 1;
-		padding: 40px;
+		padding: 40px ;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+		
 		border: 1px black solid;
 	
 	
@@ -520,15 +540,28 @@ section .content p[data-scroll="in"]{
 	
 	
 	.lastPage .container3 .contactForm{
-		position: absolute;
+		
 		padding: 70px 50px;
 		background: #fff;
-		margin-left: 150px;
-		padding-left: 250px;
+		height: 80vh;
+		
 		width: 90%;
 		height: 100%;
-		box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+		
 		border: 1px black solid;
+	}
+	.lastPage .container3 .contactForm h2{
+		
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.lastPage .container3 .contactinfo h2{
+		
+		font-size: 30px;
+		font-weight: 700;
+	}
+	.lastPage .container3 .contactinfo .info{
+		font-size: 20px;
 	}
 	
 	/* end last section */
