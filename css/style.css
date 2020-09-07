@@ -319,7 +319,10 @@ section{
 .welcomeFooter .lastFooter .footerright{
 	position: absolute;
 	right: 0;
-	border: 1px green solid;
+}
+
+.welcomeFooter .lastFooter .footerleft img{
+	padding-right: 30px;
 }
 /* end contact section */
 
@@ -335,6 +338,16 @@ section{
     transition: 0.5s;
     transform-origin: bottom;
     transform: scaleY(0);
+}
+.beforeContact .content h1{
+	position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: scaleY(0);
+
 }
 section .content h1[data-scroll="in"]{
     transform: scaleY(1);
@@ -518,6 +531,7 @@ section .content p[data-scroll="in"]{
 		background: white;
 		z-index: 1;
 		padding: 40px ;
+		padding-left: 120px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
