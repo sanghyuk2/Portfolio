@@ -37,7 +37,7 @@
 	left: 100%;
 	top: 0;
 	display: flex;
-	
+	overflow: hidden;
 	justify-content: center;
 	align-items: center;
 	z-index: 1;
@@ -50,7 +50,7 @@
 }
 
 #header .nav-list ul a {
-	font-size: 4rem;
+	font-size: 2.5rem;
 	font-weight: bolder;
 	letter-spacing: .2rem;
 	text-decoration: none;
@@ -64,14 +64,14 @@
   	left: 0;
   	width: 100%;
   	height: 100%;
-  	z-index: -2;
+	z-index: -2;
   	transition: 0.3s;
  	opacity: 0;
 }
 
 #header .nav-list li:hover+img {
 	opacity: 0.5;
-  	animation: animate 20s linear forwards;
+  	animation: animate 1.5s linear forwards;
 }
 
 

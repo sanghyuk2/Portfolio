@@ -312,6 +312,22 @@ section{
     color: #ff568c;
 }
 
+#clock{
+	position: absolute;
+	color: gainsboro;
+	letter-spacing: 7px;
+	font-weight: bold;
+	font-size: 2rem;
+
+}
+.seoul{
+	
+	color: black;
+    font-size: 24px;
+    font-weight: 500;
+	
+}
+
 .welcomeFooter .lastFooter{
 	display: flex;
 	flex-direction: row;
