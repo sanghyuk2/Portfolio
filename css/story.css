@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;	
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+section{
+	border-bottom: none;
+}
+
+.story{
+    width: 100%;
+    height: 60vh;
+    border-bottom: .1px black solid;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    line-height: 35px;
+}
+.story .border{
+    padding-left: 50px;
+}
+
+.photoZone{
+    width: 100%;
+    height: 80vh;
+    border-bottom: .1px black solid;
+}
+
+span{
+    color: gold;
+}
+
+/* start photo zone */
+.photoZone .contain{
+    position: relative;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    z-index: 1000;
+}
+.photoZone .contain .photoRight{
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    height: 150px;
+    background: white;
+    margin-left: 850px;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px black solid;
+    transform: rotate(-10deg);
+
+
+}
+
+.photoZone .contain .photoRight2{
+    position: absolute;
+    top: 250px;
+    width: 300px;
+    height: 150px;
+    background: white;
+    margin-left: 850px;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px black solid;
+    transform: rotate(10deg);
+
+
+}
+
+.photoZone .contain .photoLeft{
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 60px;
+    padding: 0;
+    width: 55%;
+    height: 60vh;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.2);
+    border: 1px black solid;
+    
+}
+/* end photo zone */
+
+/* start main page section  */
+.storySection {
+    position: relative;
+	top: 0;
+	left: 0;
+    width: 100%;
+	height: 100vh;	
+}
+
+.storySection #myimage {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	justify-content: flex-start;
+	width: 100%;	
+}
+
+.word {
+	display: block;
+	width: fit-content;
+	position:absolute;
+	z-index:1;
+	padding: 0 0 0 13%;
+	font-size: 30px;
+	color: white;
+}
+
+.word h1 {
+	line-height: 1.2em;
+	font-size: 2.5rem;
+}
+
+.word h6 {
+	font-size: 20px;
+	
+}
+/* end main page section */
+
+.welcomeFooter .lastFooter{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	
+}
+
+.welcomeFooter .lastFooter .footerright{
+	position: absolute;
+	right: 0;
+}
+
+.welcomeFooter .lastFooter .footerleft img{
+	padding-right: 30px;
+}
+.last-sect{
+    border-bottom: none;
+}
+/* end contact section */
+/* scroll effect section */
+.story .border p{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: scaleY(0);
+}
+
+.story .border p[data-scroll="in"]{
+    transform: scaleY(1);
+
+}
+/* end scroll effect section */
+
+@media only screen and (min-width:770px){
+
+	section{
+		border-bottom: .1px #f0efeb solid;
+	}
+
+	.word {
+		padding: 0 0 0 15%;
+	}
+
+	.word h1 {
+		line-height: 1.5em;
+		letter-spacing: 0.1rem;
+		font-size: 3rem;
+    }
+    .story{
+        height: 50vh;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        line-height: 1.5em;
+        
+       
+    }
+    .story .border .storyRight{
+       padding-left:600px;
+    }
+    .photoZone{
+        width: 100%;
+        height: 80vh;
+        border-bottom: .1px black solid;
+    }
+}
+
+@media only screen and (min-width:1200px){
+
+	
+}
+
