@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;	
+	font-family: 'Kumbh Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+
+section{
+	border-bottom: none;
+}
+
+/* start main page section  */
+.projectSection {
+    position: relative;
+	top: 0;
+	left: 0;
+    width: 100%;
+	height: 100vh;	
+}
+
+.projectSection #projectImage2 {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.projectImage{
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	justify-content: flex-start;
+	width: 100%;
+	
+}
+.link .container2 {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 10%;
+}
+
+
+
+.word {
+	display: block;
+	width: fit-content;
+	position:absolute;
+	z-index:1;
+	padding: 0 0 0 13%;
+	font-size: 30px;
+	color: white;
+}
+
+.word h1 {
+	line-height: 1.2em;
+	font-size: 2.5rem;
+}
+
+.word h6 {
+	font-size: 20px;
+	
+}
+/* end main page section */
+/* start link section */
+.link {
+    position: relative;
+    width: 100%;
+	height: 75vh;
+	overflow: hidden;
+	cursor: pointer;
+} 
+
+#curtain{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+
+.link .content{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+}
+
+.link .content .left{
+	text-align: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.link .content .right{
+	
+	width: 100%;
+}
+.link .content .right p{
+	font-size: 2rem;
+	
+}
+.link img {
+    position: absolute;
+	background-size: cover;
+	top: 0;
+	left: 0;
+    width: 100%;
+	height: 100%;
+	display: block;
+	color: white;
+}
+
+.link .right .tiny{
+	color: white;
+	font-size: 2rem;
+}
+/* end link section */
+
+
+
+/* projectFirst section */
+.projectFirst .container2 .content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 30px;
+	flex-direction: column;
+}
+
+.projectFirst{
+	width: 100%;
+    height: 60vh;
+    position: relative;
+}
+.projectFirst .container2 .content .left{
+	font-size: 1.5rem;
+	padding-top: 40px;
+}
+
+.projectFirst .container2 .content .right{
+	padding-top: 60px;
+}
+/* projectFirst section */
+.welcomeFooter .lastFooter .footerright{
+	position: absolute;
+	right: 0;
+}
+
+.welcomeFooter .lastFooter .footerleft img{
+	padding-right: 30px;
+}
+/* end contact section */
+
+/* 글자 위치 조정 필요함 */
+/* scroll effect section */
+.link .content h1,
+.firstPage .content h1{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 2em;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: scaleY(0);
+}
+.beforeContact .content h1{
+	position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: scaleY(0);
+
+}
+section .content h1[data-scroll="in"]{
+    transform: scaleY(1);
+
+}
+
+section .content p{
+    transition: 1s;
+    transform-origin: bottom;
+	transform: scaleY(0);
+}
+
+section .content p[data-scroll="in"]{
+    transform: scaleY(1);
+}
+/* end scroll effect section */
+/* start before contact section */
+
+.beforeContact{
+	position: relative;
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	padding-left: 10vw;
+}
+
+.beforeContact h1{
+	font-size: 3rem;
+}
+/* end before contact section */
+
+@media only screen and (min-width:770px){
+
+	section{
+		border-bottom: .1px #f0efeb solid;
+    }
+    
+    .link{
+		height: 50vh;
+	}
+
+	.link .content{
+		color: black;
+	}
+
+	.link img {
+		transform-origin: bottom left;
+		transition: .2s ease;
+		transform: rotate(-20deg);
+		opacity: 0;
+	}
+
+	.link .tiny{
+		opacity: 0;
+	}
+	
+	.link div:hover img {
+		transform: rotate(0deg) ;
+		opacity: 1;
+	}
+	.link div:hover .tiny{
+		opacity: 1;
+		transition: all 1s ease;
+	}
+	
+	.link div:hover .content h1,
+	.link div:hover .content p{
+		color: white;
+	}
+
+	.link .content{
+		flex-direction: row;
+		padding-top: 70px;
+	}
+
+	.link .content .left{
+		width: 40vw;
+		margin-left: 20px;
+		
+	}
+
+	.link .content .right{
+		
+		width: 150%;
+		height: 100%;
+		padding-left: 170px;
+		font-size: 2rem;
+
+	}
+
+
+	
+	.word {
+		padding: 0 0 0 15%;
+	}
+
+	.word h1 {
+		line-height: 1.5em;
+		letter-spacing: 0.1rem;
+		font-size: 3rem;
+	}
+
+	.container2 {
+		padding-left: 5%;
+	}
+
+	
+
+	.container2 .content p {
+		font-size: 1.2rem;
+	}
+
+
+
+}
+@media only screen and (min-width:1200px){
+    .projectFirst{
+		height: 60vh;
+	}
+
+	.projectFirst .container2 .content {
+		flex-direction: row;
+		padding-top: 70px;
+	}
+	.projectFirst .content .left{
+		width: 40vw;
+		font-size: 2em;
+		padding: 0 100px;
+	}
+	
+	.projectFirst .content .right{
+		
+		width: 200%;
+		height: 100%;
+		padding-left: 100px;
+		font-size: 2rem;
+
+	}
+
+}
