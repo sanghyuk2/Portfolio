@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/story.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle id="test" cx="40" cy="40" r="32"></circle>
+            </svg>
+        </div>
+
+        <div class="loader triangle">
+            <svg viewBox="0 0 86 80">
+                <polygon points="43 8 79 72 7 72"></polygon>
+            </svg>
+        </div>
+
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <rect x="8" y="8" width="64" height="64"></rect>
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1></h1>
+                    </a>
+                </div>
+
+
+
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="options">
+                        <ul>
+                            <li>
+                                <a href="#" class="menu-option">상혁</a>
+                            </li>
+                            <img src="image/image1.jpg">
+
+                            <li>
+                                <a href="#" class="menu-option">승한</a>
+                            </li>
+                            <img src="image/image2.jpg">
+
+                            <li>
+                                <a href="#" class="menu-option">진우</a>
+                            </li>
+                            <img src="image/image3.jpg">
+
+
+                            <div class="cursor"></div>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- End Header -->
+    <!-- main page section -->
+    <div id="root">
+        <main class="Pages" id="main">
+            <section class="storySection">
+                <div class="container">
+                    <img id="myimage" src="image/homeimage1.jpg" >
+                    <div class="word">
+                        <h6>storytelling</h6>
+                        <h1>I'd like to tell you</h1>
+                        <h1>about our story</h1>
+                        <h1>have fun.</h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="story">
+                <div class="border">
+                <div class="storyRight">
+                    <p>We met for the first time <br>in our first year of high school <br>without knowing anything.</p>
+                </div>
+            </section>
+
+            <section class="story">
+                <div class="border">
+                <div class="storyLeft">
+                    <p>For three years, <br>we spent meaningful time <br>studying, laughing, and chatting together.</p>
+                </div>
+            </div>
+            </section>
+
+            <section class="photoZone">
+                <div class="contain">
+                    <div class="photoRight">
+
+                    </div>
+
+                    <div class="photoRight2">
+
+                    </div>
+                    <div class="photoLeft">
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="story">
+                <div class="border">
+                <div class="storyRight">
+                    <p>After 3 years of good time, <br>we took the college entrance exam <br>and went to different regions and universities.</p>
+                </div>
+            </div>
+            </section>
+
+            <section class="story">
+                <div class="border">
+                <div class="storyLeft">
+                    <p>We went to different universities, <br>went to the army, <br>and enjoyed our daily lives as usual.</p>
+                </div>
+            </div>
+            </section>
+            <!-- end main page section -->
+
+            <section class="photoZone">
+
+            </section>
+
+            <section class="story">
+                <div class="border">
+                <div class="storyRight">
+                    <p>Even though we are apart, <br>we keep in touch and worry about each other.</p>
+                </div>
+            </div>
+            </section>
+
+            <section class="story">
+                <div class="border">
+                <div class="storyLeft">
+                    <p>It's been three years since we've been separated, <br>so we're going to get together <br>and do a meaningful project.</p>
+                </div>
+            </div>
+            </section>
+            <section class="story last-sect">
+                <div class="border">
+                <div class="storyRight">
+                    <p>We have a team name called "<span>Life Friends</span>." <br>We will carry out various meaningful projects <br>with our <span>life friends.</span></p>
+                </div>
+            </div>
+            </section>
+            
+                
+
+            </section>
+            <section class="welcomeFooter">
+                <div class="lastFooter">
+                    <div class="footerleft">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/facebook-f.png"/>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png"/>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png"/>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png"/>
+                </div>
+                <div class="footerright">
+                <a href="#main"><img src="https://img.icons8.com/ios-filled/50/000000/up.png"/></a>
+                </div>
+                </div>
+            </section>
+            
+
+
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script type="text/javascript">
+        ScrollOut({
+            targets: 'h1,h6,p'
+        })
+
+        setTimeout(function () {
+            $('.preloader').fadeToggle();
+        }, 2000);
+    </script>
+
+    <script src="js/cursor.js"></script>
+</body>
+
+</html>
